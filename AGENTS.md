@@ -1,6 +1,7 @@
-# AP® Statistics Master Review Series — Global Publishing & Quality Rules (AGENTS.md)
+# Master Review Series — Global Publishing & Quality Rules (AGENTS.md)
 
 This file contains the **permanent workspace guidelines** that are automatically loaded into Antigravity, Antigravity 2.0, and all 9 sub-agents across all sessions and new machine setups.
+It applies dynamically to any target subject, exam, or niche (e.g., AP Statistics, AP Calculus, Data Science, Python, SAT, ACT, CSIR NET, etc.).
 
 ---
 
@@ -34,10 +35,10 @@ This file contains the **permanent workspace guidelines** that are automatically
 ---
 
 ## ⚖️ Rule 3: Trademark & Nominative Fair Use Compliance
-1. **Cover & Page 1 Only:** $\text{AP}^\circledR$ is allowed on the book cover and page 1 title block.
-2. **Backend Keywords & KDP Title Fields:** Clean plain text only (`AP Statistics`, no special symbols $\circledR$).
+1. **Cover & Page 1 Only:** Registered trademarks (e.g., $\text{AP}^\circledR$, $\text{Python}^\circledR$) are allowed on the book cover and page 1 title block.
+2. **Backend Keywords & KDP Title Fields:** Clean plain text only (e.g., `AP Statistics`, `AP Calculus`, `Python Data Science`, no special symbols $\circledR$).
 3. **Mandatory Nominative Fair Use Disclaimer:**
-   > "*AP® and Advanced Placement® are registered trademarks of the College Board, which was not involved in the production of, and does not endorse, this product."
+   Always include the appropriate nominative fair use disclaimer on the copyright page and back cover for the target organization (e.g., College Board, Python Software Foundation, etc.).
 
 ---
 
@@ -48,14 +49,14 @@ This file contains the **permanent workspace guidelines** that are automatically
 ---
 
 ## 🎨 Rule 5: Kindle Cover Generation — AI-Only Mandate (NEVER PowerShell)
-> CRITICAL LESSON LEARNED from Book 2: Kindle front covers generated via PowerShell System.Drawing produced flat 2D gradient images with grid lines — NOT acceptable.
+> CRITICAL LESSON LEARNED: Kindle front covers generated via PowerShell System.Drawing produced flat 2D gradient images with grid lines — NOT acceptable.
 
 1. **Kindle Cover Tool:** ALWAYS use the `generate_image` tool (AI photorealistic art). NEVER use PowerShell `System.Drawing` to draw Kindle front covers.
 2. **Aspect Ratio:** Always `2:3` for Kindle covers (portrait orientation).
 3. **Required Prompt Elements for Every Kindle Cover:**
    - "Photorealistic 3D softcover/hardcover book mockup"
-   - Book title prominently on cover
-   - Statistics visual element (bell curve, scatter plot, histogram, formulas)
+   - Target book title prominently on cover
+   - Subject-specific visual element (e.g., for Statistics: bell curve, scatter plot, formulas; for Calculus: integrals, tangent curves, 3D solids; for Coding/Data Science: code flow, neural network, modern tech motifs)
    - Brand color theme (Sky Blue / Royal Navy / Gold)
    - "professional KDP book cover quality, 3D perspective showing page thickness"
 4. **5 Designs per book** — each must have a distinct color theme:
@@ -69,27 +70,27 @@ This file contains the **permanent workspace guidelines** that are automatically
 ---
 
 ## 🖼️ Rule 6: Amazon A+ Content — AI generate_image Only (NEVER PowerShell Scripts)
-> CRITICAL LESSON LEARNED from Book 2: A+ assets generated via PowerShell showed plain text boxes, garbled Unicode emoji artifacts, no 3D elements, no book mockup — completely unacceptable.
+> CRITICAL LESSON LEARNED: A+ assets generated via PowerShell showed plain text boxes, garbled Unicode emoji artifacts, no 3D elements, no book mockup — completely unacceptable.
 
 1. **A+ Tool:** ALWAYS use `generate_image` tool for ALL 6 A+ assets. NEVER use PowerShell `FillRectangle` + `DrawString` to create A+ content.
 2. **Module 1 Hero Banner (970x600, aspect 16:9):** Must include:
    - Photorealistic 3D floating book mockup (center)
    - Realistic QR code image (left panel)
-   - Smartphone app mockup (right panel)
+   - Smartphone companion app mockup (right panel)
    - Gold star badge "2027 EXAM READY BESTSELLER"
-   - Bottom sky blue strip with alignment text
-3. **Module 2 Cards x3 (300x300, aspect 1:1):** Each card = distinct feature:
-   - Card 1: 9-Unit Curriculum (3D open textbook with holographic unit labels)
-   - Card 2: Practice Workbooks (photorealistic student writing in workbook)
-   - Card 3: TI-84 Calculator (photorealistic 3D calculator with glowing screen)
-4. **Module 4 Sidebar (300x300, aspect 1:1):** Free web portal + QR code + smartphone mockup.
+   - Bottom sky blue strip with curriculum alignment text
+3. **Module 2 Cards x3 (300x300, aspect 1:1):** Each card = distinct feature tailored to the target topic:
+   - Card 1: Comprehensive Curriculum (3D open textbook with holographic topic/unit labels)
+   - Card 2: Practice Workbooks (photorealistic student writing in workbook with step-by-step solutions)
+   - Card 3: Hands-on Tool/Calculator/Code Playbook (photorealistic 3D graphing calculator, terminal, or diagnostic tool with glowing screen)
+4. **Module 4 Sidebar (300x300, aspect 1:1):** Free web companion portal + QR code + smartphone mockup.
 5. **Alternative Highlights Banner (970x300, aspect 16:9):** 5-column icon feature strip.
-6. **Every A+ image must match Book 1 Gold Standard quality** — photorealistic, 3D, premium product photography aesthetic.
+6. **Every A+ image must match Gold Standard quality** — photorealistic, 3D, premium product photography aesthetic.
 
 ---
 
 ## 📦 Rule 7: Full-Wrap Paperback/Hardcover — Composite Workflow (NEVER Draw Front Programmatically)
-> CRITICAL LESSON LEARNED from Book 2: The original script drew Kindle front cover programmatically inside the full-wrap builder — resulting in 2D flat front face. Back cover content also bled past spine into front cover zone.
+> CRITICAL LESSON LEARNED: Never draw the front cover programmatically inside the full-wrap builder. Load the AI Kindle JPG as front face.
 
 1. **Workflow Order (MANDATORY):**
    - FIRST: Generate all 5 Kindle covers using `generate_image` (Rule 5).
@@ -104,10 +105,10 @@ This file contains the **permanent workspace guidelines** that are automatically
    - `$safeWidth = $backMaxX - $bX` (all back text must fit within this)
 5. **Back Cover Font Sizes:** Title max 28px, Body max 19px — prevents text truncation within safe zone.
 6. **Back Cover Text Content Rules (STRICT — prevents clipping):**
-   - **Title line:** MAX 30 characters — short punchy title only (e.g. "Master AP Statistics" NOT "The Complete AP Statistics Study Guide and Textbook")
+   - **Title line:** MAX 30 characters — short punchy title only (e.g. "Master AP Calculus", "Master Python Data Science")
    - **Bullet points:** MAX 6 bullets per cover. Each bullet MAX 40 characters including "* " prefix.
-   - **Bullet format:** `* Feature: Short Value` — e.g. `* 9-Unit Curriculum: All Topics` NOT `* Complete 9-Unit High School AP Statistics Curriculum Fully Aligned`
-   - **Bottom tagline:** MAX 45 characters — e.g. `AP Statistics Master Review Series | Book 2`
+   - **Bullet format:** `* Feature: Short Value` — e.g. `* Core Curriculum: All Topics`
+   - **Bottom tagline:** MAX 45 characters — e.g. `[Topic] Master Review Series | Book [N]`
    - **NEVER use long sentences** on back cover — always short, punchy, scannable bullets only.
    - **Test before saving:** Use `$g.MeasureString(text, font).Width` to confirm text fits within `$safeWidth` before DrawString.
 7. **PDF Output:** Use `Convert-JpgToPdf` function after each JPG save.
@@ -116,17 +117,17 @@ This file contains the **permanent workspace guidelines** that are automatically
 ---
 
 ## 🔄 Standard 4-Step Publishing Workflow
-- **STEP 1:** Amazon Real-Time Search Demand Telemetry (Harvest queries via Amazon Completion API).
+- **STEP 1:** Amazon Real-Time Search Demand Telemetry (Harvest queries via Amazon Completion API for target topic/keyword).
 - **STEP 2:** Series Architecture & Master Roadmap Catalog.
-- **STEP 3:** SEO Metadata Package (Title, Subtitle, 7 50-byte safe Keywords, 3 Categories, HTML Description, Detailed 9-Unit TOC).
+- **STEP 3:** SEO Metadata Package (Title, Subtitle, 7 50-byte safe Keywords, 3 Categories, HTML Description, Detailed Curriculum TOC).
 - **STEP 4:** High-Yield Production Suite — broken into 4 mandatory sub-steps:
   - **STEP 4A — Full LaTeX Manuscript (MANDATORY 300-350 pages):**
     - Follow ALL rules in `.agents/rules/manuscript_content_standards.md`
-    - 9 Units × ~30 pages each + Front Matter + 2 Practice Exams + Answer Keys + Glossary
+    - Core Units/Chapters × ~30 pages each + Front Matter + 2 Full Practice Exams/Projects + Answer Keys + Glossary
     - NEVER submit skeleton/outline only — write complete content for every section
     - Verify page count ≥ 300 before proceeding to Step 4B
   - **STEP 4B — 5-Design 3D Cover Suite:** AI `generate_image` only (Rules 5 + 7). Never PowerShell.
   - **STEP 4C — 6 A+ Content Images:** AI `generate_image` only (Rule 6). Never PowerShell.
   - **STEP 4D — GitHub Sync:** Commit and push all files to `narayana-kdp-vault` main branch.
 
-**Quick Prompt to trigger:** `Start Step 1 to 4 for [keyword]` — runs all steps automatically without interruption.
+**Quick Prompt to trigger:** `Start Step 1 to 4 for [keyword]` — runs all steps automatically for any target keyword or topic without interruption.

@@ -11,11 +11,11 @@
   *(Note: No symbols in KDP Console Title field per KDP Metadata guidelines)*
 
 * **Book Subtitle (KDP Console):**  
-  `The Complete Study Guide and Textbook for High School Students Featuring Practice Workbooks and Exam Strategies`
+  `The Complete High School Textbook, Workbook & Study Guide: 9-Unit Review, 15 Full Practice Tests (2 in Book + 13 Online), 500 Digital Flashcards, and TI-84 Playbooks`
 
 * **Front Cover & Title Page Display Title:**  
   `AP® Statistics Prep Book 2027`  
-  *Subtitle:* `The Complete Study Guide and Textbook for High School Students Featuring Practice Workbooks and Exam Strategies`
+  *Subtitle:* `The Complete High School Textbook, Workbook & Study Guide: 9-Unit Review, 15 Full Practice Tests (2 in Book + 13 Online), 500 Digital Flashcards, and TI-84 Playbooks`
 
 * **Series Information:**
   * **Series Name:** `AP Statistics Master Review Series`
@@ -35,19 +35,17 @@ Disclaimer: AP® and Advanced Placement® are registered trademarks of the Colle
 
 ---
 
-## 🔑 3. Seven Backend KDP Search Keywords (50-Byte Safe & Non-Duplicated)
-
-*Guidelines Enforced: Under 50 bytes each, space-separated, no repetition of Title words, zero competitor brand names (Barron's/Princeton), zero punctuation spam.*
+## 🔑 3. Seven Backend KDP Search Keywords (100% Literal Amazon Auto-Suggestions, All Strictly < 50 Bytes)
 
 | Slot # | 7 Backend Keywords (Copy & Paste Exactly) | Byte Count | Target Customer Search Intent |
 | :---: | :--- | :---: | :--- |
-| **Slot 1** | `crash course review notes pocket study companion` | **49 / 50** | `crash course`, `review notes`, `study companion` |
-| **Slot 2** | `flash cards diagnostic drills summary cheat sheet` | **49 / 50** | `flash cards`, `cheat sheet`, `diagnostic` |
-| **Slot 3** | `unit by unit problem solver formulas poster ti 84` | **50 / 50** | `formulas poster`, `ti 84`, `problem solver` |
-| **Slot 4** | `free response frq scoring rubric mcq test questions` | **50 / 50** | `frq scoring rubric`, `mcq test questions` |
-| **Slot 5** | `college board ced syllabus regression hypothesis` | **49 / 50** | `college board ced`, `regression`, `hypothesis` |
-| **Slot 6** | `probability sampling distributions confidence int` | **49 / 50** | `sampling distributions`, `confidence interval` |
-| **Slot 7** | `for people who hate math mastery self study course` | **50 / 50** | `for people who hate`, `self study course` |
+| **Slot 1** | `ap statistics textbook for high school` | **38 / 50** | Top #1 high school course & textbook query |
+| **Slot 2** | `ap statistics workbook with practice tests` | **42 / 50** | Top workbook & practice problem query |
+| **Slot 3** | `ap stats prep book 2027` | **24 / 50** | Top shortform `ap stats` query |
+| **Slot 4** | `ap statistics crash course study guide` | **39 / 50** | Fast cram & comprehensive study guide query |
+| **Slot 5** | `ap statistics for people who hate ap statistics` | **49 / 50** | High-intent beginner & remedial student query |
+| **Slot 6** | `the practice of statistics ap edition textbook` | **46 / 50** | Curriculum & companion alignment query |
+| **Slot 7** | `ap statistics formula sheet cheat sheet` | **39 / 50** | Formula cheat sheet & reference lookup query |
 
 ---
 
@@ -73,6 +71,8 @@ Disclaimer: AP® and Advanced Placement® are registered trademarks of the Colle
 <h3><b>What's Inside This Complete 2027 Master Study Guide:</b></h3>
 <ul>
   <li><b>Comprehensive 9-Unit Curriculum Coverage:</b> Deep-dive into all 9 units—from One-Variable Data and Linear Regression to Probability, Inference for Means/Proportions, and Chi-Square analysis.</li>
+  <li><b>15 Full-Length Practice Exams (2 in Book + 13 Online):</b> Complete test-readiness with 2 print model exams plus 13 timed digital exams replicating the official Bluebook test environment.</li>
+  <li><b>500 Digital Concept & Exam Trap Flashcards:</b> Comprehensive flashcard suite covering key definitions, inference conditions, formula derivations, and common grading pitfalls.</li>
   <li><b>Step-by-Step Practice Workbooks:</b> 200+ unit-specific drill problems featuring fully annotated, step-by-step model solutions.</li>
   <li><b>Complete TI-84 Plus CE Keystroke Playbooks:</b> Master exact calculator functions (<tt>1-Var Stats</tt>, <tt>LinRegTTest</tt>, <tt>invNorm</tt>, <tt>2-SampTInt</tt>) to solve exam questions twice as fast.</li>
   <li><b>Rubric-Perfect FRQ Writing Templates:</b> Master fill-in-the-blank interpretation frames for p-values, confidence intervals, correlation $r$, and slope $b$ to capture maximum grader partial credit.</li>

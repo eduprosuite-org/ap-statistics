@@ -1,4 +1,4 @@
-﻿# =========================================================================
+# =========================================================================
 # BOOK 2 COVER ENGINE v2.0 -- ZERO-BLEED SAFE ZONE + AI-GENERATED FRONT COVERS
 # Title: AP Statistics Prep Book 2027
 # Page Count: 300 (White Paper) | Spine = 300 * 0.002252 = 0.6756 in
@@ -45,22 +45,27 @@ function Convert-JpgToPdf {
 }
 
 $designs = @(
-    @{ Id="1"; ShortName="SkyBlue_White_2027_Ready"; KindleFile="Kindle_Cover_Design_1_SkyBlue_White_2027_Ready.jpg"; BgColor="#0A2447"; SpineColor="#0284C7"; GoldColor="#F59E0B"; AccentColor="#38BDF8"; BackTextColor="#FFFFFF"; BackTitle="The Complete AP Statistics Study System"; BackBody=@("Complete 9-Unit High School AP Statistics Curriculum","200+ Guided Practice Workbooks with Step-by-Step Solutions","TI-84 Plus CE Calculator Playbooks for Every Test Type","Score-4 FRQ Templates with Grader-Annotated Model Answers","2 Full-Length 2027 Practice Exams with Diagnostic Analysis","Free Digital Web Companion - Scan In-Book QR Code"); BackTagline="AP Statistics Master Review Series | Book 2 of 9" },
-    @{ Id="2"; ShortName="RoyalBlue_Gold_2027_Ready"; KindleFile="Kindle_Cover_Design_2_RoyalBlue_Gold_2027_Ready.jpg"; BgColor="#0D1B2A"; SpineColor="#1A3A6B"; GoldColor="#D4AF37"; AccentColor="#F59E0B"; BackTextColor="#FFFFFF"; BackTitle="Master AP Statistics. Ace the Exam."; BackBody=@("9-Unit Complete Textbook: All College Board Topics Covered","Score-4 FRQ System: Fill-in-the-Blank Sentence Frames","TI-84 CE Playbooks: Exact Keystroke Sequences for Every Test","200+ Practice Problems with Model Rubric-Based Solutions","2 Full Practice Exams: Bluebook Format Simulation","Free Student Web Portal: Unit Quizzes and Formula Cards"); BackTagline="AP Statistics Master Review Series | Book 2 of 9" },
-    @{ Id="3"; ShortName="TechBlueprint"; KindleFile="Kindle_Cover_Design_3_TechBlueprint.jpg"; BgColor="#050D1A"; SpineColor="#0284C7"; GoldColor="#38BDF8"; AccentColor="#00D4FF"; BackTextColor="#FFFFFF"; BackTitle="The Data-Driven AP Statistics Prep System"; BackBody=@("9-Unit Structured Curriculum: Aligned to 2026-2027 CED","200+ Workbooks: Unit Drills and Full FRQ Practice Sets","TI-84 CE Keystroke Playbooks: Calculator Confidence Fast","Score-4 FRQ Templates: Grader-Approved Response Structures","2 Full Practice Exams with Detailed Error Diagnostics","Web Portal: Interactive Stats Tools and Formula QR Codes"); BackTagline="AP Statistics Master Review Series | Book 2 of 9" },
-    @{ Id="4"; ShortName="EmeraldAcademic"; KindleFile="Kindle_Cover_Design_4_EmeraldAcademic.jpg"; BgColor="#052E16"; SpineColor="#15803D"; GoldColor="#F59E0B"; AccentColor="#22C55E"; BackTextColor="#FFFFFF"; BackTitle="The Academic Standard for AP Statistics 2027"; BackBody=@("Full 9-Unit Course Coverage with Visual Learning Diagrams","200+ Practice Workbooks: Fill-in-the-Blank and FRQ Sets","TI-84 Plus CE Calculator Guides with Exact Key Sequences","Score-4 FRQ Templates for Free Response Mastery","2 Complete 2027 Practice Exams in Bluebook Style","Included Free Digital Study Portal with QR Scan Access"); BackTagline="AP Statistics Master Review Series | Book 2 of 9" },
-    @{ Id="5"; ShortName="SapphireMinimalist"; KindleFile="Kindle_Cover_Design_5_SapphireMinimalist.jpg"; BgColor="#03254C"; SpineColor="#0284C7"; GoldColor="#F59E0B"; AccentColor="#38BDF8"; BackTextColor="#FFFFFF"; BackTitle="Precision. Clarity. Results."; BackBody=@("9-Unit AP Statistics Curriculum: Zero Academic Bloat","200+ Targeted Practice Workbooks with Model Solutions","Complete TI-84 Plus CE Calculator Keystroke Playbooks","Score-4 Free Response Templates: Grader-Tested Structures","2 Full-Length 2027 Exams: Bluebook Digital Format Replica","Free Digital Web Companion with QR Code Access"); BackTagline="AP Statistics Master Review Series | Book 2 of 9" }
+    @{ Id="1"; ShortName="SkyBlue_White_2027_Ready"; KindleFile="Kindle_Cover_Design_1_SkyBlue_White_2027_Ready.jpg"; BgColor="#0A2447"; SpineColor="#0284C7"; GoldColor="#F59E0B"; AccentColor="#38BDF8"; BackTextColor="#FFFFFF"; BackTitle="The Complete AP Stats System"; BackBody=@("9-Unit Course & Practice Workbooks","15 Practice Tests: 2 Book + 13 Online","500 Digital Flashcards Suite","TI-84 Plus CE Keystroke Playbooks","Score-4 FRQ Response Templates","Free Online Simulator Access via QR"); BackTagline="AP Statistics Master Review Series | Book 2" },
+    @{ Id="2"; ShortName="RoyalBlue_Gold_2027_Ready"; KindleFile="Kindle_Cover_Design_2_RoyalBlue_Gold_2027_Ready.jpg"; BgColor="#0D1B2A"; SpineColor="#1A3A6B"; GoldColor="#D4AF37"; AccentColor="#F59E0B"; BackTextColor="#FFFFFF"; BackTitle="Master AP Statistics. Ace Exam"; BackBody=@("9-Unit Course & Practice Workbooks","15 Practice Tests: 2 Book + 13 Online","500 Digital Flashcards Suite","TI-84 Plus CE Keystroke Playbooks","Score-4 FRQ Response Templates","Free Online Simulator Access via QR"); BackTagline="AP Statistics Master Review Series | Book 2" },
+    @{ Id="3"; ShortName="TechBlueprint"; KindleFile="Kindle_Cover_Design_3_TechBlueprint.jpg"; BgColor="#050D1A"; SpineColor="#0284C7"; GoldColor="#38BDF8"; AccentColor="#00D4FF"; BackTextColor="#FFFFFF"; BackTitle="Data-Driven AP Stats Prep"; BackBody=@("9-Unit Course & Practice Workbooks","15 Practice Tests: 2 Book + 13 Online","500 Digital Flashcards Suite","TI-84 Plus CE Keystroke Playbooks","Score-4 FRQ Response Templates","Free Online Simulator Access via QR"); BackTagline="AP Statistics Master Review Series | Book 2" },
+    @{ Id="4"; ShortName="EmeraldAcademic"; KindleFile="Kindle_Cover_Design_4_EmeraldAcademic.jpg"; BgColor="#052E16"; SpineColor="#15803D"; GoldColor="#F59E0B"; AccentColor="#22C55E"; BackTextColor="#FFFFFF"; BackTitle="The Academic AP Stats Standard"; BackBody=@("9-Unit Course & Practice Workbooks","15 Practice Tests: 2 Book + 13 Online","500 Digital Flashcards Suite","TI-84 Plus CE Keystroke Playbooks","Score-4 FRQ Response Templates","Free Online Simulator Access via QR"); BackTagline="AP Statistics Master Review Series | Book 2" },
+    @{ Id="5"; ShortName="SapphireMinimalist"; KindleFile="Kindle_Cover_Design_5_SapphireMinimalist.jpg"; BgColor="#03254C"; SpineColor="#0284C7"; GoldColor="#F59E0B"; AccentColor="#38BDF8"; BackTextColor="#FFFFFF"; BackTitle="Precision. Clarity. Results."; BackBody=@("9-Unit Course & Practice Workbooks","15 Practice Tests: 2 Book + 13 Online","500 Digital Flashcards Suite","TI-84 Plus CE Keystroke Playbooks","Score-4 FRQ Response Templates","Free Online Simulator Access via QR"); BackTagline="AP Statistics Master Review Series | Book 2" }
 )
 
-$PB_W_IN=12.9256; $PB_H_IN=9.250; $HC_W_IN=13.8556; $HC_H_IN=10.180; $DPI=300
-$PB_W=[int]($PB_W_IN*$DPI); $PB_H=[int]($PB_H_IN*$DPI)
-$HC_W=[int]($HC_W_IN*$DPI); $HC_H=[int]($HC_H_IN*$DPI)
-$SPINE_W_IN=300*0.002252; $PB_SPINE_PX=[int]($SPINE_W_IN*$DPI)
-$PB_BACK_END=[int]((0.125+6.0)*$DPI); $PB_FRONT_START=$PB_BACK_END+$PB_SPINE_PX
-$HC_BACK_END=[int]((0.59+0.125+6.0)*$DPI); $HC_FRONT_START=$HC_BACK_END+$PB_SPINE_PX
-$PB_BACK_MAX_X=$PB_BACK_END-250; $HC_BACK_MAX_X=$HC_BACK_END-250
+$PAGE_COUNT = 305
+$SPINE_W_IN = [Math]::Round($PAGE_COUNT * 0.002252, 4)
+$PB_W_IN = [Math]::Round(0.125 + 6.0 + $SPINE_W_IN + 6.0 + 0.125, 4); $PB_H_IN = 9.250
+$HC_W_IN = [Math]::Round(0.59 + 6.0 + $SPINE_W_IN + 6.0 + 0.59, 4); $HC_H_IN = 10.180
+$DPI = 300
+$PB_W = [int]($PB_W_IN * $DPI); $PB_H = [int]($PB_H_IN * $DPI)
+$HC_W = [int]($HC_W_IN * $DPI); $HC_H = [int]($HC_H_IN * $DPI)
+$PB_SPINE_PX = [int]($SPINE_W_IN * $DPI)
+$PB_BACK_END = [int]((0.125 + 6.0) * $DPI); $PB_FRONT_START = $PB_BACK_END + $PB_SPINE_PX
+$HC_BACK_END = [int]((0.59 + 6.0) * $DPI); $HC_FRONT_START = $HC_BACK_END + $PB_SPINE_PX
+$PB_BACK_MAX_X = $PB_BACK_END - 250; $HC_BACK_MAX_X = $HC_BACK_END - 250
 
-Write-Host "=== BOOK 2 COVER ENGINE v2.0 ===" -ForegroundColor Cyan
+Write-Host "=== BOOK 2 COVER ENGINE v2.0 (305 Pages) ===" -ForegroundColor Cyan
+Write-Host "Spine: ${SPINE_W_IN}in (${PB_SPINE_PX}px)" -ForegroundColor Yellow
 Write-Host "Paperback: ${PB_W}x${PB_H}px | SpineStart:$PB_BACK_END | FrontStart:$PB_FRONT_START | BackSafeMax:$PB_BACK_MAX_X" -ForegroundColor Yellow
 
 function Build-Cover {
@@ -111,7 +116,7 @@ function Build-Cover {
     }
     # Barcode zone
     $bzY=$TH-330; $bzX=$bX+40
-    $barcodeR=New-Object System.Drawing.Rectangle($bzX,$bzY,280,200)
+    $barcodeR=New-Object System.Drawing.RectangleF($bzX,$bzY,280,200)
     $g.FillRectangle((New-Object System.Drawing.SolidBrush([System.Drawing.Color]::White)),$barcodeR)
     $fSm=New-Object System.Drawing.Font("Arial",14,[System.Drawing.FontStyle]::Regular)
     $sfCC=New-Object System.Drawing.StringFormat; $sfCC.Alignment=[System.Drawing.StringAlignment]::Center; $sfCC.LineAlignment=[System.Drawing.StringAlignment]::Center

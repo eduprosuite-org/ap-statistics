@@ -162,6 +162,7 @@
         <span class=logo-badge>2027 EXAM READY</span>
       </a>
       <div style=display:flex; gap:12px; align-items:center;>
+        <a href=flashcards.html style="color:#d97706; text-decoration:none; font-size:0.9rem; font-weight:700; background:rgba(245,158,11,0.12); padding:6px 12px; border-radius:6px;">⚡ 75 Digital Flashcards</a>
         <a href=index.html style=color:var(--text-color); text-decoration:none; font-size:0.9rem; font-weight:600;>← Companion Home</a>
         <button class=theme-toggle id=themeToggle>🌙 Dark Mode</button>
       </div>
@@ -171,13 +172,13 @@
   <!-- Hero -->
   <section class=hero style=padding: 36px 0;>
     <div class=container>
-      <h1 style=font-size:2.2rem;>Official 2027 Digital AP® Statistics Exam Simulator</h1>
-      <p>23 Full-Length Authentic Online Practice Exams (Exams 3 to 25) featuring the 2027 42-MCQ + 4-FRQ format, Bluebook timer, Desmos calculator, and instant rubric scoring (25 Total Exams including 2 in-book).</p>
+      <h1 style=font-size:2.2rem;>Official 2027 Digital AP® Statistics Exam Simulator & Flashcard Suite</h1>
+      <p>Official interactive companion for the <em>AP® Statistics Master Review Series</em>. Featuring the <strong>Book 2 Suite (13 Full-Length Online Exams + 75 Digital Flashcards)</strong> and the <strong>Book 3 Suite (23 Full-Length Online Exams)</strong> with College Board Bluebook interface, live timer, Desmos calculator, and instant automated grading.</p>
       <div class=badge-row>
-        <span class=hero-pill>⏱️ 90-Minute Timed Bluebook Interface</span>
-        <span class=hero-pill>🧮 Built-in Desmos & Formula Sheet</span>
-        <span class=hero-pill>🎯 23 Online Full-Length Exams (966 MCQs)</span>
-        <span class=hero-pill>📄 1-Click Printable PDF Mode</span>
+        <span class=hero-pill>📗 Book 2: 15 Tests Total (2 Book + 13 Online)</span>
+        <span class=hero-pill>⚡ 75 Digital Concept & Trap Flashcards</span>
+        <span class=hero-pill>🎯 Book 3: 25 Tests Total (2 Book + 23 Online)</span>
+        <span class=hero-pill>⏱️ 90-Min Timed Bluebook Interface</span>
       </div>
     </div>
   </section>
@@ -189,70 +190,146 @@
       
       <!-- Exam Selector Sidebar -->
       <aside class=exam-nav-card>
-        <h3 style=margin-bottom: 12px; font-size: 1.1rem; color: #0284c7;>🎯 Select Online Exam</h3>
-        <p style=font-size:0.85rem; color:var(--text-muted); margin-bottom: 14px;>23 Full-Length Exams aligned with the 2027 5-Unit Framework:</p>
+        <h3 style="margin-bottom: 8px; font-size: 1.1rem; color: #0284c7;">🎯 Select Online Exam</h3>
         
-        <div id=examList style="max-height: 520px; overflow-y: auto; padding-right: 4px;">
-          <button class="exam-item-btn active" onclick=loadExam(3)><span>Exam 3: Diagnostic 2</span><span class=badge-pill>42 MCQs</span></button>
-          <button class=exam-item-btn onclick=loadExam(4)><span>Exam 4: Bluebook Test A</span><span class=badge-pill>42 MCQs</span></button>
-          <button class=exam-item-btn onclick=loadExam(5)><span>Exam 5: Bluebook Test B</span><span class=badge-pill>42 MCQs</span></button>
-          <button class=exam-item-btn onclick=loadExam(6)><span>Exam 6: Skills 1 & 2 Focus</span><span class=badge-pill>42 MCQs</span></button>
-          <button class=exam-item-btn onclick=loadExam(7)><span>Exam 7: Skills 3 & 4 Focus</span><span class=badge-pill>42 MCQs</span></button>
-          <button class=exam-item-btn onclick=loadExam(8)><span>Exam 8: Inference Drill</span><span class=badge-pill>42 MCQs</span></button>
-          <button class=exam-item-btn onclick=loadExam(9)><span>Exam 9: Regression Deep-Dive</span><span class=badge-pill>42 MCQs</span></button>
-          <button class=exam-item-btn onclick=loadExam(10)><span>Exam 10: Mastery Simulator 1</span><span class=badge-pill>42 MCQs</span></button>
-          <button class=exam-item-btn onclick=loadExam(11)><span>Exam 11: Mastery Simulator 2</span><span class=badge-pill>42 MCQs</span></button>
-          <button class=exam-item-btn onclick=loadExam(12)><span>Exam 12: Grand Mock 1</span><span class=badge-pill>42 MCQs</span></button>
-          <button class=exam-item-btn onclick=loadExam(13)><span>Exam 13: Grand Mock 2</span><span class=badge-pill>42 MCQs</span></button>
-          <button class=exam-item-btn onclick=loadExam(14)><span>Exam 14: Probability & CLT Drill</span><span class=badge-pill>42 MCQs</span></button>
-          <button class=exam-item-btn onclick=loadExam(15)><span>Exam 15: Experimental Design Master</span><span class=badge-pill>42 MCQs</span></button>
-          <button class=exam-item-btn onclick=loadExam(16)><span>Exam 16: Two-Sample Proportions</span><span class=badge-pill>42 MCQs</span></button>
-          <button class=exam-item-btn onclick=loadExam(17)><span>Exam 17: Two-Sample Means t-Test</span><span class=badge-pill>42 MCQs</span></button>
-          <button class=exam-item-btn onclick=loadExam(18)><span>Exam 18: Chi-Square Goodness-of-Fit</span><span class=badge-pill>42 MCQs</span></button>
-          <button class=exam-item-btn onclick=loadExam(19)><span>Exam 19: Chi-Square Homogeneity</span><span class=badge-pill>42 MCQs</span></button>
-          <button class=exam-item-btn onclick=loadExam(20)><span>Exam 20: Slope Inference & LINER</span><span class=badge-pill>42 MCQs</span></button>
-          <button class=exam-item-btn onclick=loadExam(21)><span>Exam 21: High-Yield FRQ Synthesizer</span><span class=badge-pill>42 MCQs</span></button>
-          <button class=exam-item-btn onclick=loadExam(22)><span>Exam 22: Score-5 Challenge Exam 1</span><span class=badge-pill>42 MCQs</span></button>
-          <button class=exam-item-btn onclick=loadExam(23)><span>Exam 23: Score-5 Challenge Exam 2</span><span class=badge-pill>42 MCQs</span></button>
-          <button class=exam-item-btn onclick=loadExam(24)><span>Exam 24: Pre-Exam Dress Rehearsal</span><span class=badge-pill>42 MCQs</span></button>
-          <button class=exam-item-btn onclick=loadExam(25)><span>Exam 25: The Ultimate Score-5 Grand Finale</span><span class=badge-pill>42 MCQs</span></button>
+        <!-- Book Filter Switcher -->
+        <div style="display:flex; flex-direction:column; gap:8px; margin-bottom:14px;">
+          <div style="display:flex; gap:6px;">
+            <button id="btnFilterB2" class="tool-btn" onclick="filterExams('book2')" style="flex:1; padding:8px 6px; font-size:0.78rem; font-weight:700; border-radius:6px; cursor:pointer; border:1px solid #0284c7; background:#0284c7; color:white;">📗 Book 2 (13 Tests)</button>
+            <button id="btnFilterAll" class="tool-btn" onclick="filterExams('all')" style="flex:1; padding:8px 6px; font-size:0.78rem; font-weight:700; border-radius:6px; cursor:pointer; border:1px solid var(--border-color); background:var(--surface-subtle); color:var(--text-primary);">🎯 Book 3 (23 Tests)</button>
+          </div>
+          <button onclick="toggleFlashcards(true)" style="width:100%; padding:10px; background:linear-gradient(135deg, #f59e0b, #d97706); color:#0f172a; font-weight:800; border:none; border-radius:6px; cursor:pointer; font-size:0.85rem; box-shadow:0 2px 6px rgba(245,158,11,0.3); transition:transform 0.15s ease;">⚡ Launch 75 Digital Flashcards</button>
         </div>
 
-        <div style=margin-top: 20px; padding-top: 15px; border-top: 1px solid var(--border-color); font-size: 0.85rem;>
-          <p><strong>In-Book Exams:</strong><br>• Exam 1: 2027 Diagnostic (p. 210)<br>• Exam 2: 2027 Mastery (p. 248)</p>
-          <p style=margin-top: 8px; color: #0284c7;><strong>Total Suite: 25 Full Exams (2 Book + 23 Online)</strong></p>
+        <p id="examFilterDesc" style="font-size:0.82rem; color:var(--text-muted); margin-bottom: 12px; font-weight:600;">Showing 13 Online Tests for Book 2 (Exams 3 to 15):</p>
+        
+        <div id=examList style="max-height: 500px; overflow-y: auto; padding-right: 4px;">
+          <button class="exam-item-btn active b2-exam" onclick=loadExam(3)><span>Exam 3: Diagnostic 2</span><span class=badge-pill style="background:#0284c7; color:white;">Book 2 & 3</span></button>
+          <button class="exam-item-btn b2-exam" onclick=loadExam(4)><span>Exam 4: Bluebook Test A</span><span class=badge-pill style="background:#0284c7; color:white;">Book 2 & 3</span></button>
+          <button class="exam-item-btn b2-exam" onclick=loadExam(5)><span>Exam 5: Bluebook Test B</span><span class=badge-pill style="background:#0284c7; color:white;">Book 2 & 3</span></button>
+          <button class="exam-item-btn b2-exam" onclick=loadExam(6)><span>Exam 6: Skills 1 & 2 Focus</span><span class=badge-pill style="background:#0284c7; color:white;">Book 2 & 3</span></button>
+          <button class="exam-item-btn b2-exam" onclick=loadExam(7)><span>Exam 7: Skills 3 & 4 Focus</span><span class=badge-pill style="background:#0284c7; color:white;">Book 2 & 3</span></button>
+          <button class="exam-item-btn b2-exam" onclick=loadExam(8)><span>Exam 8: Inference Drill</span><span class=badge-pill style="background:#0284c7; color:white;">Book 2 & 3</span></button>
+          <button class="exam-item-btn b2-exam" onclick=loadExam(9)><span>Exam 9: Regression Deep-Dive</span><span class=badge-pill style="background:#0284c7; color:white;">Book 2 & 3</span></button>
+          <button class="exam-item-btn b2-exam" onclick=loadExam(10)><span>Exam 10: Mastery Simulator 1</span><span class=badge-pill style="background:#0284c7; color:white;">Book 2 & 3</span></button>
+          <button class="exam-item-btn b2-exam" onclick=loadExam(11)><span>Exam 11: Mastery Simulator 2</span><span class=badge-pill style="background:#0284c7; color:white;">Book 2 & 3</span></button>
+          <button class="exam-item-btn b2-exam" onclick=loadExam(12)><span>Exam 12: Grand Mock 1</span><span class=badge-pill style="background:#0284c7; color:white;">Book 2 & 3</span></button>
+          <button class="exam-item-btn b2-exam" onclick=loadExam(13)><span>Exam 13: Grand Mock 2</span><span class=badge-pill style="background:#0284c7; color:white;">Book 2 & 3</span></button>
+          <button class="exam-item-btn b2-exam" onclick=loadExam(14)><span>Exam 14: Probability & CLT Drill</span><span class=badge-pill style="background:#0284c7; color:white;">Book 2 & 3</span></button>
+          <button class="exam-item-btn b2-exam" onclick=loadExam(15)><span>Exam 15: Experimental Design Master</span><span class=badge-pill style="background:#0284c7; color:white;">Book 2 & 3</span></button>
+          <button class="exam-item-btn b3-exclusive" onclick=loadExam(16)><span>Exam 16: Two-Sample Proportions</span><span class=badge-pill style="background:#64748b; color:white;">Book 3</span></button>
+          <button class="exam-item-btn b3-exclusive" onclick=loadExam(17)><span>Exam 17: Two-Sample Means t-Test</span><span class=badge-pill style="background:#64748b; color:white;">Book 3</span></button>
+          <button class="exam-item-btn b3-exclusive" onclick=loadExam(18)><span>Exam 18: Chi-Square Goodness-of-Fit</span><span class=badge-pill style="background:#64748b; color:white;">Book 3</span></button>
+          <button class="exam-item-btn b3-exclusive" onclick=loadExam(19)><span>Exam 19: Chi-Square Homogeneity</span><span class=badge-pill style="background:#64748b; color:white;">Book 3</span></button>
+          <button class="exam-item-btn b3-exclusive" onclick=loadExam(20)><span>Exam 20: Slope Inference & LINER</span><span class=badge-pill style="background:#64748b; color:white;">Book 3</span></button>
+          <button class="exam-item-btn b3-exclusive" onclick=loadExam(21)><span>Exam 21: High-Yield FRQ Synthesizer</span><span class=badge-pill style="background:#64748b; color:white;">Book 3</span></button>
+          <button class="exam-item-btn b3-exclusive" onclick=loadExam(22)><span>Exam 22: Score-5 Challenge Exam 1</span><span class=badge-pill style="background:#64748b; color:white;">Book 3</span></button>
+          <button class="exam-item-btn b3-exclusive" onclick=loadExam(23)><span>Exam 23: Score-5 Challenge Exam 2</span><span class=badge-pill style="background:#64748b; color:white;">Book 3</span></button>
+          <button class="exam-item-btn b3-exclusive" onclick=loadExam(24)><span>Exam 24: Pre-Exam Dress Rehearsal</span><span class=badge-pill style="background:#64748b; color:white;">Book 3</span></button>
+          <button class="exam-item-btn b3-exclusive" onclick=loadExam(25)><span>Exam 25: Ultimate Score-5 Finale</span><span class=badge-pill style="background:#64748b; color:white;">Book 3</span></button>
+        </div>
+
+        <div style="margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border-color); font-size: 0.82rem; line-height: 1.5;">
+          <div style="padding:10px; background:rgba(2,132,199,0.08); border-radius:6px; border-left:3px solid #0284c7; margin-bottom:10px;">
+            <strong style="color:#0284c7;">📗 Book 2 (Prep Book):</strong><br>
+            • 2 In-Book Exams (Exams 1 & 2)<br>
+            • 13 Online Timed Exams (Exams 3–15)<br>
+            • 75 Digital Flashcards<br>
+            <strong>= 15 Practice Tests Total</strong>
+          </div>
+          <div style="padding:10px; background:rgba(245,158,11,0.08); border-radius:6px; border-left:3px solid #f59e0b;">
+            <strong style="color:#d97706;">🎯 Book 3 (Practice Companion):</strong><br>
+            • 2 In-Book Exams (Exams 1 & 2)<br>
+            • 23 Online Timed Exams (Exams 3–25)<br>
+            <strong>= 25 Practice Tests Total</strong>
+          </div>
         </div>
       </aside>
 
-      <!-- Exam Active Stage -->
-      <section class=exam-stage>
+      <!-- Stage Container (Simulator OR Flashcards) -->
+      <div>
         
-        <!-- Live Countdown & Controls -->
-        <div class=timer-bar>
-          <div>
-            <div style=font-size:0.85rem; text-transform:uppercase; letter-spacing:1px; color:#94a3b8;>Section I Time Remaining</div>
-            <div class=timer-display id=timer>90:00</div>
+        <!-- FLASHCARDS VIEW (Hidden by default, shown when toggled) -->
+        <section id="flashcardsStage" class="exam-stage" style="display:none; margin-bottom:24px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:18px;">
+            <div>
+              <h2 style="color:#0f172a; font-size:1.6rem; display:flex; align-items:center; gap:8px;">
+                <span>⚡ 75 Digital Exam Trap & Concept Flashcards</span>
+              </h2>
+              <p style="color:var(--text-muted); font-size:0.9rem;">Exclusive Book 2 Companion Deck: Master the tricky conditions, deduction traps, and formula nuances that trip up 85% of test-takers.</p>
+            </div>
+            <button onclick="toggleFlashcards(false)" class="btn-timer" style="background:#475569;">← Back to Exams</button>
           </div>
-          <div style=display:flex; gap:10px;>
-            <button class=btn-timer id=toggleTimer onclick=toggleTimer()>Pause</button>
-            <button class=btn-timer style=background:#475569; onclick=resetTimer()>Reset 90m</button>
-            <button class=btn-timer style=background:#10b981; onclick=submitExam()>Submit & Grade</button>
+
+          <!-- Flashcard Deck Controls -->
+          <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:16px; flex-wrap:wrap;">
+            <div style="display:flex; align-items:center; gap:8px;">
+              <label for="fcCategorySelect" style="font-size:0.85rem; font-weight:700; color:var(--text-primary);">Filter Topic:</label>
+              <select id="fcCategorySelect" onchange="filterFlashcards(this.value)" style="padding:6px 12px; border-radius:6px; border:1px solid var(--border-color); font-size:0.85rem;">
+                <option value="all">All 75 Flashcards</option>
+                <option value="unit123">Units 1-3: Data Exploration & Design (Cards 1-15)</option>
+                <option value="unit45">Units 4-5: Probability & CLT (Cards 16-30)</option>
+                <option value="unit67">Units 6-7: Inference Proportions & Means (Cards 31-50)</option>
+                <option value="unit89">Units 8-9: Chi-Square & Regression (Cards 51-65)</option>
+                <option value="frqtraps">Score-4 FRQ Wording & Traps (Cards 66-75)</option>
+              </select>
+            </div>
+            <div style="font-weight:700; color:#0284c7; font-size:0.95rem;" id="fcCounter">Card 1 of 75</div>
           </div>
-        </div>
 
-        <!-- Tool Bar (Desmos, Formula Table, Notation Guide) -->
-        <div class=tool-bar>
-          <button class=tool-btn onclick=openDesmos()>🧮 Launch Desmos Graphing Calculator</button>
-          <button class=tool-btn onclick=openFormulas()>📑 AP® Statistics Formula Sheet</button>
-          <button class=tool-btn onclick=openQWERTYGuide()>⌨️ Bluebook QWERTY Notation</button>
-          <button class=tool-btn onclick=window.print()>🖨️ Print Exam Booklet (PDF)</button>
-        </div>
+          <!-- 3D Flashcard Display -->
+          <div id="fcCard" onclick="flipCurrentCard()" style="min-height:280px; cursor:pointer; background:linear-gradient(135deg, #0f172a, #1e293b); color:white; border-radius:12px; padding:32px; display:flex; flex-direction:column; justify-content:space-between; box-shadow:0 10px 25px rgba(15,23,42,0.15); border:1px solid rgba(56,189,248,0.2); transition:transform 0.2s ease;">
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+                <span id="fcCategoryBadge" style="background:#0284c7; color:white; font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:12px; text-transform:uppercase; letter-spacing:0.5px;">Unit 1: Data Exploration</span>
+                <span id="fcSideLabel" style="color:#38bdf8; font-size:0.8rem; font-weight:700;">[ FRONT: EXAM TRAP ]</span>
+              </div>
+              <h3 id="fcText" style="font-size:1.25rem; font-weight:600; line-height:1.6; color:#f8fafc;">Loading card...</h3>
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-top:20px; border-top:1px solid rgba(255,255,255,0.1); padding-top:12px;">
+              <span style="font-size:0.8rem; color:#94a3b8;">💡 Click card or press Space to flip</span>
+              <button onclick="event.stopPropagation(); flipCurrentCard();" style="background:#38bdf8; color:#0f172a; border:none; padding:6px 14px; border-radius:6px; font-weight:700; cursor:pointer; font-size:0.85rem;">🔄 Flip Card</button>
+            </div>
+          </div>
 
-        <!-- Exam Header Details -->
-        <div style=margin-bottom: 20px;>
-          <h2 id=currentExamTitle style=color: #0f172a; font-size:1.6rem;>Practice Exam 3: 2027 Full-Length Digital Simulation</h2>
-          <p style=color:var(--text-muted); font-size:0.95rem;>Section I: 42 Multiple-Choice Questions | 90 Minutes | 50% Exam Weight</p>
-        </div>
+          <!-- Navigation & Shuffle -->
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-top:18px;">
+            <button onclick="prevFlashcard()" class="tool-btn" style="font-weight:700;">⬅️ Previous Card</button>
+            <button onclick="shuffleFlashcards()" class="tool-btn" style="background:rgba(2,132,199,0.1); color:#0284c7; font-weight:700;">🔀 Shuffle Deck</button>
+            <button onclick="nextFlashcard()" class="tool-btn" style="font-weight:700; background:#0284c7; color:white;">Next Card ➡️</button>
+          </div>
+        </section>
+
+        <!-- EXAM ACTIVE STAGE -->
+        <section id="examStage" class=exam-stage>
+        
+          <!-- Live Countdown & Controls -->
+          <div class=timer-bar>
+            <div>
+              <div style=font-size:0.85rem; text-transform:uppercase; letter-spacing:1px; color:#94a3b8;>Section I Time Remaining</div>
+              <div class=timer-display id=timer>90:00</div>
+            </div>
+            <div style=display:flex; gap:10px;>
+              <button class=btn-timer id=toggleTimer onclick=toggleTimer()>Pause</button>
+              <button class=btn-timer style=background:#475569; onclick=resetTimer()>Reset 90m</button>
+              <button class=btn-timer style=background:#10b981; onclick=submitExam()>Submit & Grade</button>
+            </div>
+          </div>
+
+          <!-- Tool Bar (Desmos, Formula Table, Notation Guide) -->
+          <div class=tool-bar>
+            <button class=tool-btn onclick="toggleFlashcards(true)" style="background:linear-gradient(135deg, #f59e0b, #d97706); color:#0f172a; font-weight:800; border:none;">⚡ 75 Digital Flashcards</button>
+            <button class=tool-btn onclick=openDesmos()>🧮 Launch Desmos Graphing Calculator</button>
+            <button class=tool-btn onclick=openFormulas()>📑 AP® Statistics Formula Sheet</button>
+            <button class=tool-btn onclick=openQWERTYGuide()>⌨️ Bluebook QWERTY Notation</button>
+            <button class=tool-btn onclick=window.print()>🖨️ Print Exam Booklet (PDF)</button>
+          </div>
+
+          <!-- Exam Header Details -->
+          <div style=margin-bottom: 20px;>
+            <h2 id=currentExamTitle style=color: #0f172a; font-size:1.6rem;>Practice Exam 3: 2027 Full-Length Digital Simulation</h2>
+            <p style=color:var(--text-muted); font-size:0.95rem;>Section I: 42 Multiple-Choice Questions | 90 Minutes | 50% Exam Weight</p>
+          </div>
 
         <!-- Questions Rendering Container -->
         <div id=questionsContainer></div>
@@ -281,6 +358,7 @@
         </div>
 
       </section>
+      </div>
     </div>
   </main>
 

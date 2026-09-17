@@ -3,4 +3,7 @@
 *.aux
 *.log
 *.toc
+_archive_old_scratch_scripts/
+_archive_old_draft_pdfs/
+**/_archive_old_draft_pdfs/
 

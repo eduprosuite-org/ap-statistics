@@ -128,6 +128,6 @@ It applies dynamically to any target subject, exam, or niche (e.g., AP Statistic
     - Verify page count ≥ 300 before proceeding to Step 4B
   - **STEP 4B — 5-Design 3D Cover Suite:** AI `generate_image` only (Rules 5 + 7). Never PowerShell.
   - **STEP 4C — 6 A+ Content Images:** AI `generate_image` only (Rule 6). Never PowerShell.
-  - **STEP 4D — GitHub Sync:** Commit and push all files to `narayana-kdp-vault` main branch.
+  - **STEP 4D — GitHub Sync:** Commit and push all files to `ap-statistics` main branch.
 
 **Quick Prompt to trigger:** `Start Step 1 to 4 for [keyword]` — runs all steps automatically for any target keyword or topic without interruption.
